@@ -1,0 +1,14 @@
+
+<div class="container col-md-8">
+  <mat-card>
+    <h1 style="text-align: center">Personal Details</h1><br>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form">
+
+      </formly-form>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <hr/><br>
+  </mat-card>
+</div>
+<router-outlet></router-outlet>
